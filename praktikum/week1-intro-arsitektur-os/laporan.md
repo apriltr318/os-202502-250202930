@@ -41,7 +41,7 @@ dmesg | head
 ---
 
 ## Hasil Eksekusi
-Sertakan screenshot hasil percobaan atau diagram:
+Screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/example.png)
 
 ---
@@ -60,13 +60,14 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ## Quiz
 1. Sebutkan tiga fungsi utama sitem operasi pada komputer !
-**Jawaban:** Mengelola sumber daya komputer seperti CPU, memori, dan perangkat input-output.
+   **Jawaban:** Mengelola sumber daya komputer seperti CPU, memori, dan perangkat input-output.
 Menyediakan antarmuka pengguna untuk berinteraksi dengan perangkat komputer.
 Menjalankan aplikasi dan program yang diinstal oleh pengguna
-3. Jelaskan perbedaan kernel mode dan user mode !
-**Jawaban:** Kernel mode adalah mode di mana sistem operasi bekerja dengan hak akses penuh terhadap seluruh sumber daya komputer, seperti memori, perangkat keras, dan CPU. Dalam mode ini, sistem dapat menjalankan instruksi yang bersifat kritis dan sensitif. Sebaliknya, user mode adalah mode di mana program atau aplikasi pengguna dijalankan dengan hak akses terbatas.
-4. [Pertanyaan 3]  
-   **Jawaban:**  
+2. Jelaskan perbedaan kernel mode dan user mode !
+   **Jawaban:** Kernel mode adalah mode di mana sistem operasi bekerja dengan hak akses penuh terhadap seluruh sumber daya komputer, seperti memori, perangkat keras, dan CPU. Dalam mode ini, sistem dapat menjalankan instruksi yang bersifat kritis dan sensitif. Sebaliknya, user mode adalah mode di mana program atau aplikasi pengguna dijalankan dengan hak akses terbatas. Program di user mode tidak bisa langsung mengakses perangkat keras atau memori sistem, dan jika terjadi kesalahan, hanya program tersebut yang akan berhenti tanpa memengaruhi keseluruhan sistem.
+3. Sebutkan contoh OS dengan arsitektur monolithic dan microkernel !
+   **Jawaban: Pada arsitektur monolithic ada Linux, MS-DOS dan UNIX
+Pada microkernel ada MINIX, QNX dan Mach**  
 
 ---
 
