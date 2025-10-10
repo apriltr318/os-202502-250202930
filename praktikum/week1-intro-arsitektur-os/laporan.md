@@ -59,8 +59,10 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. 1. Sebutkan tiga fungsi utama sitem operasi pada komputer! 
-   **Jawaban:**  
+1. Sebutkan tiga fungsi utama sitem operasi pada komputer!.
+   **Jawaban:**  Mengelola sumber daya komputer seperti CPU, memori, dan perangkat input-output.
+Menyediakan antarmuka pengguna untuk berinteraksi dengan perangkat komputer.
+Menjalankan aplikasi dan program yang diinstal oleh pengguna
 2. [Pertanyaan 2]  
    **Jawaban:**  
 3. [Pertanyaan 3]  
