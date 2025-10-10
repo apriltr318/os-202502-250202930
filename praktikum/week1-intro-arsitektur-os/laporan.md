@@ -64,7 +64,7 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 Menyediakan antarmuka pengguna untuk berinteraksi dengan perangkat komputer.
 Menjalankan aplikasi dan program yang diinstal oleh pengguna
 2. [Jelaskan perbedaan kernel mode dan user mode !]  
-   **Jawaban:**  
+   **Jawaban:** **Kernel mode adalah mode di mana sistem operasi bekerja dengan hak akses penuh terhadap seluruh sumber daya komputer, seperti memori, perangkat keras, dan CPU. Dalam mode ini, sistem dapat menjalankan instruksi yang bersifat kritis dan sensitif. Sebaliknya, user mode adalah mode di mana program atau aplikasi pengguna dijalankan dengan hak akses terbatas**
 3. [Pertanyaan 3]  
    **Jawaban:**  
 
