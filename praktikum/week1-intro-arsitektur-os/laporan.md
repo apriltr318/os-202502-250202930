@@ -59,7 +59,7 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
+1. 1. Sebutkan tiga fungsi utama sitem operasi pada komputer! 
    **Jawaban:**  
 2. [Pertanyaan 2]  
    **Jawaban:**  
@@ -71,9 +71,4 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ## Refleksi Diri
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
-
----
-
-**Credit:**  
-_Template laporan praktikum Sistem Operasi (SO-202501) – Universitas Putra Bangsa_
+- Bagaimana cara Anda mengatasinya? 
