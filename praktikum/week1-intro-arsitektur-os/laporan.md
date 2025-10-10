@@ -1,6 +1,6 @@
 
 # Laporan Praktikum Minggu Ke-1
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+"Arsitektur Sistem Operasi dan Kernel"
 
 ---
 
