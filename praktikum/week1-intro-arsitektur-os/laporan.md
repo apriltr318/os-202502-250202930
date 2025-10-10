@@ -34,6 +34,7 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 Tuliskan potongan kode atau perintah utama:
 ```bash
 uname -a
+whoami
 lsmod | head
 dmesg | head
 ```
