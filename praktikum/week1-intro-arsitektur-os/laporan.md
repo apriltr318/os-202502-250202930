@@ -11,14 +11,15 @@ Arsitektur Sistem Operasi dan Kernel
 ---
 
 ## Tujuan
-- Tuliskan tujuan praktikum minggu ini.
-- Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
-
+- Mahasiswa dapat membedakan kernel mode dan user mode.
+- Mempelajari perintah dasar pada linux
+- Dapat menghubungkan hasil teori fungsi kernel, system call, arsitektur OS.
+- 
 ---
 
 ## Langkah Praktikum
@@ -44,7 +45,7 @@ dmesg | head
 
 ## Hasil Eksekusi
 Diagram dan hasil percobaan
-![Screenshot hasil](screenshots/example.png)
+![Screenshot hasil](screenshots/.png)
 
 ---
 
@@ -61,12 +62,17 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Sebutkan tiga fungsi utama sitem operasi pada komputer!
+- > Mengelola sumber daya komputer seperti CPU, memori, dan perangkat input-output.
+- > Menyediakan antarmuka pengguna untuk berinteraksi dengan perangkat komputer.
+- > Menjalankan aplikasi dan program yang diinstal oleh pengguna.
+
+2. Jelaskan perbedaan kernel mode dan user mode !
+- > Kernel mode adalah mode di mana sistem operasi bekerja dengan hak akses penuh terhadap seluruh sumber daya komputer, seperti memori, perangkat keras, dan CPU. Dalam mode ini, sistem dapat menjalankan instruksi yang bersifat kritis dan sensitif. Sebaliknya, user mode adalah mode di mana program atau aplikasi pengguna dijalankan dengan hak akses terbatas. Program di user mode tidak bisa langsung mengakses perangkat keras atau memori sistem, dan jika terjadi kesalahan, hanya program tersebut yang akan berhenti tanpa memengaruhi keseluruhan sistem.
+
+3. Sebutkan contoh OS dengan arsitektur monolithic dan microkernel !
+- > Pada arsitektur monolithic ada Linux, MS-DOS dan UNIX
+- Pada microkernel ada MINIX, QNX dan Mach  
 
 ---
 
