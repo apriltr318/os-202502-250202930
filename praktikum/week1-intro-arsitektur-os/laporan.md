@@ -51,7 +51,7 @@ dmesg | head
 
 ## Hasil Eksekusi
   Hasil percobaan dan digram os:
- - ![WSL](screenshots/diagram-os.drawio)
+ - ![WSL](screenshots/WSL.png)
  - ![diagram-os](screenshots/diagram-os1.png)
 
 ---
@@ -79,7 +79,7 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 3. Sebutkan contoh OS dengan arsitektur monolithic dan microkernel !
 - > Pada arsitektur monolithic ada Linux, MS-DOS dan UNIX
-- Pada microkernel ada MINIX, QNX dan Mach  
+- > Pada microkernel ada MINIX, QNX dan Mach  
 
 ---
 
