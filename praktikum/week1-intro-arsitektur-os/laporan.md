@@ -44,8 +44,9 @@ dmesg | head
 ---
 
 ## Hasil Eksekusi
-Diagram dan hasil percobaan
-![Screenshot hasil](screenshots/.png)
+  Hasil percobaan dan digram os:
+ - ![WSL](screenshots/ss-WSL.png)
+ - ![diagram-os](screenshots/diagram-os.png)
 
 ---
 
