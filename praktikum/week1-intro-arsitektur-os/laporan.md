@@ -1,20 +1,18 @@
-
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu 1
+Arsitektur Sistem Operasi dan Kernel
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : April Triadi
+- **NIM**   : 250202930
+- **Kelas** : 1IKRB
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+- Tuliskan tujuan praktikum minggu ini.
+- Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
 
 ---
 
@@ -35,6 +33,7 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 Tuliskan potongan kode atau perintah utama:
 ```bash
 uname -a
+whoami
 lsmod | head
 dmesg | head
 ```
@@ -60,7 +59,7 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
+1. [Pertanyaan 1]
    **Jawaban:**  
 2. [Pertanyaan 2]  
    **Jawaban:**  
@@ -75,6 +74,3 @@ Tuliskan secara singkat:
 - Bagaimana cara Anda mengatasinya?  
 
 ---
-
-**Credit:**  
-_Template laporan praktikum Sistem Operasi (SO-202501) – Universitas Putra Bangsa_
