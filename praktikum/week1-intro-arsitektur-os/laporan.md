@@ -36,8 +36,14 @@ Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta s
 ## Kode / Perintah
 ```bash
 uname -a
+```
+```
 whoami
+```
+```
 lsmod | head
+```
+```
 dmesg | head
 ```
 
@@ -79,7 +85,9 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini?
+- > mengerjakan tugas ini menggunakan hp 
+- Bagaimana cara Anda mengatasinya?
+- > Dicoba saja
 
 ---
