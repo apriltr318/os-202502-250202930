@@ -22,15 +22,17 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
-
+1. Instal Linux Ubuntu atau WSL
+2. Buka WSL pada  komputer/laptop
+3. Menjalankan perintah pada WSL
+    ``` uname -a```, ```whoami```, ```lsmod | head```,``` dmesg | head ```.
+4. Membuat diagram arsitektur os dari *Membuat diagram arsitektur yang menggambarkan alur interaksi dari *User → Application → System Call → Kernel → Hardware* menggunakan draw.io* atau menggunakan aplikasi sejenisnya.
+5. Simpan hasil diagram pada ```praktikum/week1-intro-os/screenshots/diagram-os.png```.
+6. Tuliskan hasil laporan pengamatan, analisi, dan kesimpulan pada ```praktikum/week1-intro-arsitektur-os/laporan.md```.
+7. Simpan hasil screenshots terminal pada folder ```screenshots/```
 ---
 
 ## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
 ```bash
 uname -a
 whoami
@@ -41,7 +43,7 @@ dmesg | head
 ---
 
 ## Hasil Eksekusi
-Sertakan screenshot hasil percobaan atau diagram:
+Diagram dan hasil percobaan
 ![Screenshot hasil](screenshots/example.png)
 
 ---
