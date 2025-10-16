@@ -1,6 +1,6 @@
 
 # Laporan Praktikum Minggu 2
- Struktur System Call dan Fungsi Kernel
+ Topik: Struktur System Call dan Fungsi Kernel
 ---
 
 ## Identitas
@@ -96,12 +96,10 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+Jawab pertanyaan berikut di bagian **Quiz** laporan:
+1. Apa fungsi utama system call dalam sistem operasi?  
+2. Sebutkan 4 kategori system call yang umum digunakan.  
+3. Mengapa system call tidak bisa dipanggil langsung oleh user program?
 
 ---
 
