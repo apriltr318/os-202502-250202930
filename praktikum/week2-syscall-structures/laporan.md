@@ -72,15 +72,12 @@ Tuliskan potongan kode atau perintah utama:
 ```
 strace ls
 ```
-
 ```
 strace -e trace=open,read,write,close cat /etc/passwd
 ```
-
 ```
 dmesg | tail -n 10
 ```
-
 ---
 
 ## Hasil Eksekusi
