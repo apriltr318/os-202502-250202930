@@ -108,10 +108,10 @@ Jawab pertanyaan berikut di bagian **Quiz** laporan:
 2. Sebutkan 4 kategori system call yang umum digunakan.
    | System Call | Keterangan | Fungsi
     | :--- | :--- | :---|
-    | `open()` | Membuka sebuah berkas untuk dibaca atau ditulis. |  |
-    | `read()` | Membaca data dari sebuah berkas yang sudah dibuka. |  | 
-    | `write()` | Menulis data ke sebuah berkas yang sudah dibuka. |  |
-    | `close()` | Menutup sebuah berkas yang sudah selesai digunakan. |  |
+    | `open()/openat()` | Membuka atau membuat file dan mengembalikan File Desciptor (FD), yaitu bilangan bulat yang merujuk pada file tersebut dalam kernel. |  |
+    | `read()` | Membaca sebuah _byte_ data dari sumber yang diwakili oleh **File Descriptor** tertentu (misanya, file,_socket_, atau pipe) ke dlam _buffer_ didalam memori program. |  | 
+    | `write()` | Menulis sejumalah _byte_ data dari _buffer_ di memori progtam ke tujuan yang diwakili oleh **File Descriptor** (mmisalnya, file, _socket_, atau stdout). |  |
+    | `fork()` | Membuat proses baru (**proses child**) yang merupakan salinan identik dari proses yang memanggilnya (**proses parent**). Proses _parent_ dan _child_ akan terus berjalan dari titi kembalinya ```fork()```. |  |
 4. Mengapa system call tidak bisa dipanggil langsung oleh user program?
 
 ---
