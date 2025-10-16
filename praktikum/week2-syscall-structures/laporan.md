@@ -105,8 +105,14 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ## Quiz
 Jawab pertanyaan berikut di bagian **Quiz** laporan:
 1. Apa fungsi utama system call dalam sistem operasi?  
-2. Sebutkan 4 kategori system call yang umum digunakan.  
-3. Mengapa system call tidak bisa dipanggil langsung oleh user program?
+2. Sebutkan 4 kategori system call yang umum digunakan.
+   | System Call | Keterangan | Fungsi
+    | :--- | :--- | :---|
+    | `open()` | Membuka sebuah berkas untuk dibaca atau ditulis. |  |
+    | `read()` | Membaca data dari sebuah berkas yang sudah dibuka. |  | 
+    | `write()` | Menulis data ke sebuah berkas yang sudah dibuka. |  |
+    | `close()` | Menutup sebuah berkas yang sudah selesai digunakan. |  |
+4. Mengapa system call tidak bisa dipanggil langsung oleh user program?
 
 ---
 
