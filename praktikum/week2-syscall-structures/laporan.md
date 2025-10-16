@@ -69,18 +69,25 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
+```
+strace ls
+```
+
+```
+strace -e trace=open,read,write,close cat /etc/passwd
+```
+
+```
+dmesg | tail -n 10
 ```
 
 ---
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
-
+- >[Screenshot hasil](screenshots/Week2.1.png)
+- >[Screenshot hasil](screenshots/Week2.2.png)
+- >[Screenshot hasil](screenshots/Week2.3.png)
 ---
 
 ## Analisis
