@@ -106,12 +106,17 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 Jawab pertanyaan berikut di bagian **Quiz** laporan:
 1. Apa fungsi utama system call dalam sistem operasi?  
 2. Sebutkan 4 kategori system call yang umum digunakan.
-   | System Call | Keterangan | Fungsi
-    | :--- | :--- | :---|
-    | `open()/openat()` | Membuka atau membuat file dan mengembalikan File Desciptor (FD), yaitu bilangan bulat yang merujuk pada file tersebut dalam kernel. |  |
-    | `read()` | Membaca sebuah _byte_ data dari sumber yang diwakili oleh **File Descriptor** tertentu (misanya, file,_socket_, atau pipe) ke dlam _buffer_ didalam memori program. |  | 
-    | `write()` | Menulis sejumalah _byte_ data dari _buffer_ di memori progtam ke tujuan yang diwakili oleh **File Descriptor** (mmisalnya, file, _socket_, atau stdout). |  |
-    | `fork()` | Membuat proses baru (**proses child**) yang merupakan salinan identik dari proses yang memanggilnya (**proses parent**). Proses _parent_ dan _child_ akan terus berjalan dari titi kembalinya ```fork()```. |  |
+   | System Call | Keterangan | Fungsi |
+    | :--- | :--- | :--- |
+   
+    | `open()/openat()` | Membuka atau membuat file dan mengembalikan **File Desciptor (FD)**, yaitu bilangan bulat yang merujuk pada file tersebut dalam kernel. | Menginisiasi operasi I/O file (membaca dan menulis). |
+   
+    | `read()` | Membaca sebuah _byte_ data dari sumber yang diwakili oleh **File Descriptor** tertentu (misanya, file,_socket_, atau pipe) ke dalam _buffer_ didalam memori program. | Mengambil data dari perangkat I/O atau file. |
+   
+    | `write()` | Menulis sejumalah _byte_ data dari _buffer_ di memori progtam ke tujuan yang diwakili oleh **File Descriptor** (mmisalnya, file, _socket_, atau stdout). | Mengirim data ke perangkat I/O atau file. |
+   
+    | `fork()` | Membuat proses baru (**proses child**) yang merupakan salinan identik dari proses yang memanggilnya (**proses parent**). Proses _parent_ dan _child_ akan terus berjalan dari titi kembalinya ```fork()```. | Menciptakan proses baru (multitasking). |
+   
 4. Mengapa system call tidak bisa dipanggil langsung oleh user program?
 
 ---
