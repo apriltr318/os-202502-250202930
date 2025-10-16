@@ -101,7 +101,8 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ## Quiz
 Jawab pertanyaan berikut di bagian **Quiz** laporan:
-1. Apa fungsi utama system call dalam sistem operasi?  
+1. Apa fungsi utama system call dalam sistem operasi?.
+  - Fungsi utama system call dalam sistem operasi adalah sebagai jembatan antara program (user mode) dengan sistem operasi (kernel mode).
 2. Sebutkan 4 kategori system call yang umum digunakan.
    | System Call | Keterangan | Fungsi |
     | :--- | :--- | :--- |
@@ -110,7 +111,7 @@ Jawab pertanyaan berikut di bagian **Quiz** laporan:
     | `write()` | Menulis sejumalah _byte_ data dari _buffer_ di memori progtam ke tujuan yang diwakili oleh **File Descriptor** (mmisalnya, file, _socket_, atau stdout). | Mengirim data ke perangkat I/O atau file. |
     | `fork()` | Membuat proses baru (**proses child**) yang merupakan salinan identik dari proses yang memanggilnya (**proses parent**). Proses _parent_ dan _child_ akan terus berjalan dari titi kembalinya ```fork()```. | Menciptakan proses baru (multitasking). |
    
-4. Mengapa system call tidak bisa dipanggil langsung oleh user program?
+3. Mengapa system call tidak bisa dipanggil langsung oleh user program?
 
 ---
 
