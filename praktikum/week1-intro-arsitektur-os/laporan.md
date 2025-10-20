@@ -51,8 +51,8 @@ dmesg | head
 
 ## Hasil Eksekusi
   Hasil percobaan dan digram os:
- - ![WSL](screenshots/WSL.png)
- - ![diagram-os](screenshots/diagram-os1.png)
+  ![WSL](screenshots/WSL.png)
+  ![diagram-os](screenshots/diagram-os1.png)
 
 ---
 
