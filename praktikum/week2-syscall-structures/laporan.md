@@ -12,7 +12,6 @@
 
 ## Tujuan
 Tuliskan tujuan praktikum minggu ini.  
-Contoh: 
 
 1. Menjelaskan konsep dan fungsi system call dalam sistem operasi.
 Mahasiswa dapat memahami bahwa system call adalah mekanisme yang digunakan oleh program aplikasi untuk meminta layanan dari sistem operasi, misalnya mengakses file, membuat proses baru, atau berkomunikasi dengan perangkat keras.
@@ -37,11 +36,11 @@ Mahasiswa dapat menjelaskan bagaimana sistem berpindah dari user mode (tempat ap
 4. Menggunakan perintah Linux untuk menampilkan dan menganalisis system call.
 Mahasiswa dapat mempraktikkan penggunaan alat seperti:
 
-    -`strace` → untuk menelusuri system call yang dilakukan oleh suatu program.
+    - `strace` → untuk menelusuri system call yang dilakukan oleh suatu program.
 
-    -`ltrace` → untuk melacak library call.
+    - `ltrace` → untuk melacak library call.
 
-     -`dmesg` atau `syscall` → untuk menganalisis aktivitas kernel.
+     - `dmesg` atau `syscall` → untuk menganalisis aktivitas kernel.
 ---
 
 ## Dasar Teori
