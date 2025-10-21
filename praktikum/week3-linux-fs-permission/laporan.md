@@ -1,13 +1,12 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
-
+# Laporan Praktikum Minggu 3
+Topik: Manajemen File dan Permission di Linux
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : April Triadi  
+- **NIM**   : 250202930  
+- **Kelas** : 1IKRB
 
 ---
 
@@ -19,15 +18,22 @@ Contoh:
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+Pada praktikum minggu ini, mahasiswa akan mempelajari **pengelolaan file dan direktori menggunakan perintah dasar Linux**, serta konsep **permission dan ownership**.  
+Praktikum berfokus pada:
+- Navigasi sistem file dengan `ls`, `pwd`, `cd`, dan `cat`.
+- Pengaturan hak akses file menggunakan `chmod`.
+- Pengubahan kepemilikan file menggunakan `chown`.
+- Dokumentasi hasil eksekusi dan pengelolaan repositori praktikum.
+.
 
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+1. Menggunakan perintah `ls`, `pwd`, `cd`, `cat` untuk navigasi file dan direktori.
+2. Menggunakan `chmod` dan `chown` untuk manajemen hak akses file.
+3. Menjelaskan hasil output dari perintah Linux dasar.
+4. Menyusun laporan praktikum dengan struktur yang benar.
+5. Mengunggah dokumentasi hasil ke Git Repository tepat waktu.
 
 ---
 
