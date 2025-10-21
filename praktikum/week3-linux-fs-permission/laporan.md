@@ -123,10 +123,35 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. Apa fungsi dari perintah `chmod`?  
-2. Apa arti dari kode permission `rwxr-xr--`?  
-3. Jelaskan perbedaan antara `chown` dan `chmod`.  
+1. Apa fungsi dari perintah `chmod`?
 
+   Jawab:
+
+   Fungsi perintah chmod adalah mengubah izin akses (permission) pada file atau direktori di sistem operasi Linux/Unix.
+
+3. Apa arti dari kode permission `rwxr-xr--`?
+
+   Jawab:
+
+   `wx` → pemilik (user) bisa membaca (r), menulis (w), dan menjalankan (x) file.
+
+   `r-x` → grup (group) hanya bisa membaca (r) dan menjalankan (x), tapi tidak bisa menulis.
+
+   `r--` → pengguna lain (others) hanya bisa membaca (r), tidak bisa menulis atau menjalankan
+   
+5. Jelaskan perbedaan antara `chown` dan `chmod`!.
+    
+   Jawab:
+
+   `chown` (change owner) → digunakan untuk mengubah kepemilikan file atau direktori, yaitu siapa pemilik (user) dan        grup dari file tersebut.
+   Contoh:
+   `chown` ali:staff data.txt → mengubah pemilik file jadi ali dan grupnya jadi staff.
+
+   `chmod` (change mode) → digunakan untuk mengubah izin akses (permission) file atau direktori, yaitu siapa yang boleh      membaca, menulis, atau mengeksekusi.
+   Contoh:
+   chmod 755 data.txt → memberi izin penuh untuk pemilik, dan izin baca/eksekusi untuk yang lain.
+
+   
 ---
 
 ## Refleksi Diri
