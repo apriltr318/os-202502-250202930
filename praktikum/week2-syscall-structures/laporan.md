@@ -13,8 +13,39 @@
 ## Tujuan
 Tuliskan tujuan praktikum minggu ini.  
 Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+> Setelah menyelesaikan tugas ini, mahasiswa mampu:
 
+1. Menjelaskan konsep dan fungsi system call dalam sistem operasi.
+Mahasiswa dapat memahami bahwa system call adalah mekanisme yang digunakan oleh program aplikasi untuk meminta layanan dari sistem operasi, misalnya mengakses file, membuat proses baru, atau berkomunikasi dengan perangkat keras.
+
+
+2. Mengidentifikasi jenis-jenis system call dan fungsinya.
+Mahasiswa mampu mengenali berbagai jenis system call seperti:
+
+Process control (misalnya fork(), exec(), exit())
+
+File management (open(), read(), write(), close())
+
+Device management
+
+Information maintenance
+
+Communication dan memahami fungsi dari masing-masing kategori tersebut.
+
+
+
+3. Mengamati alur perpindahan mode user ke kernel saat system call terjadi.
+Mahasiswa dapat menjelaskan bagaimana sistem berpindah dari user mode (tempat aplikasi berjalan) ke kernel mode (tempat OS menjalankan layanan penting) saat system call dieksekusi, serta memahami mekanisme keamanan di balik transisi ini.
+
+
+4. Menggunakan perintah Linux untuk menampilkan dan menganalisis system call.
+Mahasiswa dapat mempraktikkan penggunaan alat seperti:
+
+strace → untuk menelusuri system call yang dilakukan oleh suatu program.
+
+ltrace → untuk melacak library call.
+
+dmesg atau syscall → untuk menganalisis aktivitas kernel.
 ---
 
 ## Dasar Teori
