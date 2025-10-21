@@ -38,19 +38,76 @@ Praktikum berfokus pada:
 ---
 
 ## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
-```
+1. **Setup Environment**
+   - Gunakan Linux (Ubuntu/WSL).
+   - Pastikan folder kerja berada di dalam direktori repositori Git praktikum:
+     ```
+     praktikum/week3-linux-fs-permission/
+     ```
+
+2. **Eksperimen 1 – Navigasi Sistem File**
+   Jalankan perintah berikut:
+   ```bash
+   pwd
+   ls -l
+   cd /tmp
+   ls -a
+   ```
+   - Jelaskan hasil tiap perintah.
+   - Catat direktori aktif, isi folder, dan file tersembunyi (jika ada).
+
+3. **Eksperimen 2 – Membaca File**
+   Jalankan perintah:
+   ```bash
+   cat /etc/passwd | head -n 5
+   ```
+   - Jelaskan isi file dan struktur barisnya (user, UID, GID, home, shell).
+
+4. **Eksperimen 3 – Permission & Ownership**
+   Buat file baru:
+   ```bash
+   echo "Hello <NAME><NIM>" > percobaan.txt
+   ls -l percobaan.txt
+   chmod 600 percobaan.txt
+   ls -l percobaan.txt
+   ```
+   - Analisis perbedaan sebelum dan sesudah chmod.  
+   - Ubah pemilik file (jika memiliki izin sudo):
+   ```bash
+   sudo chown root percobaan.txt
+   ls -l percobaan.txt
+   ```
+   - Catat hasilnya.
+
+5. **Eksperimen 4 – Dokumentasi**
+   - Ambil screenshot hasil terminal dan simpan di:
+     ```
+     praktikum/week3-linux-fs-permission/screenshots/
+     ```
+   - Tambahkan analisis hasil pada `laporan.md`.
+
+6. **Commit & Push**
+   ```bash
+   git add .
+   git commit -m "Minggu 3 - Linux File System & Permission"
+   git push origin main
 
 ---
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+- ![Screenshot hasil](screenshots/Week3.1.png)
+- ![Screenshot hasil](screenshots/Week3.2.png)
+- ![Screenshot hasil](screenshots/Week3.3.png)
 
+---
+
+## Output yang Diharapkan
+- Hasil observasi perintah Linux dimasukkan ke dalam `laporan.md`.  
+- Screenshot hasil eksekusi disimpan di `screenshots/`.  
+- Laporan lengkap tersimpan di `laporan.md`.  
+- Semua hasil telah di-*commit* ke GitHub tepat waktu.
+  
 ---
 
 ## Analisis
@@ -66,12 +123,9 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Apa fungsi dari perintah `chmod`?  
+2. Apa arti dari kode permission `rwxr-xr--`?  
+3. Jelaskan perbedaan antara `chown` dan `chmod`.  
 
 ---
 
