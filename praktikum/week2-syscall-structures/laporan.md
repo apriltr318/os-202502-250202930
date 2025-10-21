@@ -82,9 +82,9 @@ dmesg | tail -n 10
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/Week2.1.png)
-- >[Screenshot hasil](screenshots/Week2.2.png)
-- >[Screenshot hasil](screenshots/Week2.3.png)
+- ![Screenshot hasil](screenshots/Week2.1.png)
+- ![Screenshot hasil](screenshots/Week2.2.png)
+- ![Screenshot hasil](screenshots/Week2.3.png)
 ---
 
 ## Analisis
