@@ -22,15 +22,15 @@ Mahasiswa dapat memahami bahwa system call adalah mekanisme yang digunakan oleh 
 2. Mengidentifikasi jenis-jenis system call dan fungsinya.
 Mahasiswa mampu mengenali berbagai jenis system call seperti:
 
-Process control (misalnya fork(), exec(), exit())
+   -Process control (misalnya `fork()`, `exec()`, `exit()`)
 
-File management (open(), read(), write(), close())
+   -File management `(open()`, `read()`, `write()`, `close()`)
 
-Device management
+   -Device management
 
-Information maintenance
+   -Information maintenance
 
-Communication dan memahami fungsi dari masing-masing kategori tersebut.
+   -Communication dan memahami fungsi dari masing-masing kategori tersebut.
 
 
 
@@ -41,11 +41,11 @@ Mahasiswa dapat menjelaskan bagaimana sistem berpindah dari user mode (tempat ap
 4. Menggunakan perintah Linux untuk menampilkan dan menganalisis system call.
 Mahasiswa dapat mempraktikkan penggunaan alat seperti:
 
-strace → untuk menelusuri system call yang dilakukan oleh suatu program.
+    -`strace` → untuk menelusuri system call yang dilakukan oleh suatu program.
 
-ltrace → untuk melacak library call.
+    -`ltrace` → untuk melacak library call.
 
-dmesg atau syscall → untuk menganalisis aktivitas kernel.
+     -`dmesg` atau `syscall` → untuk menganalisis aktivitas kernel.
 ---
 
 ## Dasar Teori
