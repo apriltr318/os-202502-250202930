@@ -83,9 +83,26 @@ Setelah menyelesaikan tugas ini, mahasiswa mampu:
 
 ### Quiz
 Jawab pertanyaan berikut di bagian **Quiz** laporan:
-1. Apa fungsi utama system call dalam sistem operasi?  
-2. Sebutkan 4 kategori system call yang umum digunakan.  
-3. Mengapa system call tidak bisa dipanggil langsung oleh user program?
+1. Apa fungsi utama system call dalam sistem operasi?
+
+    Jawab: System call berfungsi sebagai jembatan antara program pengguna (user program) dengan kernel sistem operasi.
+   
+   
+3. Sebutkan 4 kategori system call yang umum digunakan.
+
+    Jawab:
+
+- Process control → untuk membuat, menghentikan, atau mengatur proses (contoh: `fork()`, `exit()`).
+
+- File management → untuk membuat, membaca, menulis, atau menghapus file (contoh: `open()`, `read()`, `write()`).
+
+- Device management → untuk mengakses dan mengontrol perangkat input/output (contoh: `ioctl()`, `read()`, `write()`).
+
+- Information maintenance → untuk mendapatkan atau mengatur informasi sistem (contoh: `getpid()`, `time()`).
+    
+5. Mengapa system call tidak bisa dipanggil langsung oleh user program?
+
+    Jawab: Karena system call bekerja di kernel mode, sedangkan program pengguna berjalan di user mode. Jika user program bisa memanggilnya langsung, maka keamanan sistem bisa terganggu dan program bisa mengakses memori atau perangkat keras tanpa izin.
 
 ---
 
