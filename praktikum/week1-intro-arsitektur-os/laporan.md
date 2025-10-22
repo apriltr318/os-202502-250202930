@@ -57,7 +57,11 @@ sudo dmesg | head
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
+- Jelaskan makna hasil percobaan.
+  >Makna dari hasil percobaan ini bisa meliputi beberapa hal, seperti:
+    - Pemahaman Fungsi Kernel: Melalui percobaan, kita dapat mengamati bagaimana kernel berinteraksi dengan perangkat keras, memanipulasi memori, mengelola proses, dan menyediakan interface bagi aplikasi.
+    - Pengenalan terhadap System Call: Percobaan ini menunjukkan bagaimana aplikasi berinteraksi dengan kernel melalui system call untuk mendapatkan layanan yang disediakan oleh OS, seperti alokasi memori atau manajemen input/output.
+    - Arsitektur OS dan Pengaruhnya: Hasil percobaan juga dapat memberikan wawasan tentang bagaimana arsitektur OS, baik berbasis monolitik atau mikrokernel, mempengaruhi performa, keandalan, dan keamanan sistem. 
 - Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
 - Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
 
