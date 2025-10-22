@@ -44,7 +44,23 @@ Mahasiswa dapat mempraktikkan penggunaan alat seperti:
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+Ringkasan Teori (3–5 Poin):
+
+1. System call adalah antarmuka antara program aplikasi dan sistem operasi yang memungkinkan program meminta layanan OS seperti akses file, eksekusi proses, dan komunikasi antarpesanan.
+
+2. Mode transisi (User-Kernel Mode) terjadi saat aplikasi memanggil system call, di mana CPU berpindah dari mode user ke mode kernel untuk menjalankan instruksi yang memiliki akses penuh terhadap perangkat keras.
+   
+3. Jenis-jenis system call meliputi:
+
+- Process control: untuk membuat dan mengelola proses (contoh: fork(), exec()).
+
+- File management: untuk membuka, membaca, menulis, dan menutup file.
+
+- Communication: untuk komunikasi antar proses (IPC).
+
+4. Alat bantu seperti strace dan ltrace digunakan untuk memantau dan menganalisis system call dan library call yang dijalankan oleh program.
+
+5. Pengamatan system call membantu memahami bagaimana program berinteraksi dengan OS secara langsung dan bagaimana OS mengelola permintaan tersebut secara aman dan efisien.
 
 ---
 
@@ -102,16 +118,16 @@ strace ls
 strace -e trace=open,read,write,close cat /etc/passwd
 ```
 ```
-dmesg | tail -n 10
+sudo dmesg | tail -n 10
 ```
 ---
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-- ![Screenshot hasil](screenshots/Diagram_Week2.png)
-- ![Screenshot hasil](screenshots/week2.1.png)
-- ![Screenshot hasil](screenshots/week2.2.png)
-- ![Screenshot hasil](screenshots/week2_sudo.png)
+- Diagram ![Screenshot hasil](screenshots/Diagram_Week2.png)
+- `strace ls`![Screenshot hasil](screenshots/week2.1.png)
+- `strace -e trace=open,read,write,close cat /etc/passwd`![Screenshot hasil](screenshots/week2.2.png)
+- `sudo dmesg | tail -n 10`![Screenshot hasil](screenshots/week2_sudo.png)
 ---
 
 ## Analisis
