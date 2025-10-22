@@ -109,8 +109,8 @@ dmesg | tail -n 10
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
 - ![Screenshot hasil](screenshots/Diagram_Week2.png)
-- ![Screenshot hasil](screenshots/week2_strace ls.png)
-- ![Screenshot hasil](screenshots/week2_strace -e.png)
+- ![Screenshot hasil](screenshots/week2.1.png)
+- ![Screenshot hasil](screenshots/week2.2.png)
 - ![Screenshot hasil](screenshots/week2_sudo.png)
 ---
 
