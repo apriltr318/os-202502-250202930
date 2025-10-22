@@ -26,7 +26,7 @@ Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta s
 1. Instal Linux Ubuntu atau WSL
 2. Buka WSL pada  komputer/laptop
 3. Menjalankan perintah pada WSL
-    ``` uname -a```, ```whoami```, ```lsmod | head```,``` dmesg | head ```.
+    ``` uname -a```, ```whoami```, ```lsmod | head```,```sudo dmesg | head ```.
 4. Membuat diagram arsitektur os dari *Membuat diagram arsitektur yang menggambarkan alur interaksi dari *User → Application → System Call → Kernel → Hardware* menggunakan draw.io* atau menggunakan aplikasi sejenisnya.
 5. Simpan hasil diagram pada ```praktikum/week1-intro-os/screenshots/diagram-os.png```.
 6. Tuliskan hasil laporan pengamatan, analisi, dan kesimpulan pada ```praktikum/week1-intro-arsitektur-os/laporan.md```.
@@ -44,7 +44,7 @@ whoami
 lsmod | head
 ```
 ```
-dmesg | head
+sudo dmesg | head
 ```
 
 ---
