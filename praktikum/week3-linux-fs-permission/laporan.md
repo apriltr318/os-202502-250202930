@@ -97,8 +97,6 @@ Praktikum berfokus pada:
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
 - ![Screenshot hasil](screenshots/week3.1.png)
-- ![Screenshot hasil](screenshots/Week3.2.png)
-- ![Screenshot hasil](screenshots/Week3.3.png)
 
 ---
 
