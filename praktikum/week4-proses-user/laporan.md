@@ -100,8 +100,9 @@ Eksperimen dilakukan melalui penggunaan perintah dasar seperti `ps`, `top`, `kil
 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
+
 1.
-  ```bash
+   ```bash
    whoami
    id
    groups
