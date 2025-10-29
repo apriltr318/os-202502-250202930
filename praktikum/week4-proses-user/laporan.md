@@ -160,9 +160,22 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ## Quiz
 Tuliskan jawaban di bagian **Quiz** pada laporan:
-1. Apa fungsi dari proses `init` atau `systemd` dalam sistem Linux?  
-2. Apa perbedaan antara `kill` dan `killall`?  
-3. Mengapa user `root` memiliki hak istimewa di sistem Linux?
+1. Apa fungsi dari proses `init` atau `systemd` dalam sistem Linux?
+
+Fungsi proses init atau systemd dalam sistem Linux
+init atau penerus modernnya, systemd, adalah proses pertama yang dijalankan oleh kernel setelah sistem booting. Ia bertugas untuk menginisialisasi seluruh sistem, seperti menyalakan layanan (services), memasang file system, dan memulai proses penting lainnya. Semua proses lain di Linux adalah “anak” dari init atau systemd, sehingga bisa dikatakan mereka adalah induk dari semua proses (parent of all processes).
+   
+3. Apa perbedaan antara `kill` dan `killall`?
+
+`kill` digunakan untuk menghentikan proses berdasarkan ID proses (PID) tertentu. Contoh: `kill 1234` hanya menghentikan proses dengan PID 1234.
+
+`killall` digunakan untuk menghentikan semua proses yang memiliki nama yang sama. Contoh: killall `firefox` akan menghentikan semua proses dengan nama firefox.
+Jadi, perbedaan utamanya ada pada cara identifikasi proses `kill` berdasarkan PID, sedangkan `killall` berdasarkan nama proses.
+   
+5. Mengapa user `root` memiliki hak istimewa di sistem Linux?
+
+User `root` adalah superuser, yaitu pengguna dengan akses penuh terhadap seluruh sistem. Ia dapat membaca, menulis, menghapus, dan mengubah semua file serta konfigurasi tanpa batasan izin (permission).
+Alasannya sederhana: dibutuhkan satu entitas yang bisa memelihara, memperbaiki, dan mengontrol seluruh sistem, terutama untuk tugas administratif seperti instalasi software, pengaturan jaringan, dan manajemen user. Namun, karena kekuatannya besar, penggunaan akun `root` juga sangat berisiko bila disalahgunakan.   
 
 ---
 
