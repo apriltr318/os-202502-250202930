@@ -102,10 +102,7 @@ dmesg | head
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/week5.1.png)
-![Screenshot hasil](screenshots/week5.2.png)
-![Screenshot hasil](screenshots/week5.3.png)
-![Screenshot hasil](screenshots/week4.4.png)
+![Screenshot hasil](screenshots/Wekk5.1.png)
 
 ---
 
