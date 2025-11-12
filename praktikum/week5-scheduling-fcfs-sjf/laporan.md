@@ -104,6 +104,10 @@ dmesg | head
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/Wekk5.1.png)
 
+| Algoritma | Avg Waiting Time | Avg Turnaround Time | Kelebihan | Kekurangan |
+|------------|------------------|----------------------|------------|-------------|
+| FCFS | 8,75 | 14,75 | Sederhana dan mudah diterapkan | Tidak efisien untuk proses panjang |
+| SJF | 6,25 |12,25  | Optimal untuk job pendek | Menyebabkan *starvation* pada job panjang |
 ---
 
 ## Analisis
