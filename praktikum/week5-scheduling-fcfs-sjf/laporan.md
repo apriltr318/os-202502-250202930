@@ -92,13 +92,11 @@ Mahasiswa akan melakukan simulasi dan perbandingan hasil perhitungan kedua algor
 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
+```
+Waiting Time (WT) = waktu mulai eksekusi - Arrival Time
+Turnaround Time (TAT) = WT + Burst Time
 ```
 
----
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
@@ -111,21 +109,33 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+1. Perbandingan Rata-rata Waktu Tunggu (WT) dan Turnaround Time (TAT) antara FCFS dan SJF:
+- FCFS (First Come First Serve) melayani proses berdasarkan urutan kedatangan. Hal ini cenderung menghasilkan waktu tunggu dan turnaround time yang lebih tinggi jika terdapat proses dengan durasi panjang di awal antrian, karena proses singkat harus menunggu proses panjang selesai terlebih dahulu. Akibatnya, rata-rata WT dan TAT cenderung lebih besar dan tidak optimal.
+- SJF (Shortest Job First) memprioritaskan proses dengan durasi eksekusi terpendek terlebih dahulu. Karena itu, proses-proses pendek selesai lebih cepat tanpa terganggu oleh proses lama, yang menyebabkan rata-rata WT dan TAT menjadi lebih kecil dan optimal dibanding FCFS.
+2. Kondisi Kapan SJF Lebih Unggul dari FCFS dan Sebaliknya:
+  - SJF lebih unggul ketika durasi proses sangat bervariasi dan durasi proses dapat diprediksi dengan baik. Dalam kondisi ini, SJF meminimalkan waktu tunggu rata-rata dan turnaround time, sehingga efisiensi penjadwalan meningkat.
+  - FCFS lebih unggul atau lebih cocok pada sistem yang memerlukan fairness dan kesederhanaan tanpa memerlukan prediksi waktu proses, seperti pada sistem batch yang prosesnya relatif homogen atau pada kasus ketika semua proses memiliki durasi yang hampir sama.
+  - SJF kurang cocok pada sistem interaktif atau real-time yang memerlukan respons cepat dan adil karena memungkinkan proses panjang mengalami starvation, sedangkan FCFS memberikan perlakuan adil berdasarkan urutan kedatangan.
 
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+ SJF cenderung memberikan hasil rata-rata waktu tunggu dan turnaround time yang lebih kecil dibanding FCFS karena memprioritaskan proses dengan durasi terpendek terlebih dahulu, sehingga meningkatkan efisiensi. Namun, FCFS lebih sederhana dan adil dalam penjadwalan proses yang datang secara berurutan tanpa memerlukan prediksi durasi. Pemilihan algoritma terbaik bergantung pada karakteristik dan kebutuhan sistem yang digunakan.
 
 ---
 
 ## Quiz
 1. Apa perbedaan utama antara FCFS dan SJF?
+
+FCFS mengutamakan urutan kedatangan proses, sedangkan SJF mengutamakan durasi proses terpendek untuk dieksekusi terlebih dahulu
+   
 2. Mengapa SJF dapat menghasilkan rata-rata waktu tunggu minimum?
-3. Apa kelemahan SJF jika diterapkan pada sistem interaktif  
+
+Perbedaan utama antara FCFS (First Come First Serve) dan SJF (Shortest Job First) terletak pada cara penjadwalan proses dilaksanakan. FCFS menjalankan proses berdasarkan urutan kedatangan tanpa memedulikan lama waktu proses (burst time) proses yang datang lebih dulu dilayani lebih dulu hingga selesai. Sementara itu, SJF menjalankan proses yang memiliki waktu eksekusi terpendek terlebih dahulu, sehingga dapat meminimalkan waktu tunggu rata-rata proses.
+
+3. Apa kelemahan SJF jika diterapkan pada sistem interaktif
+
+Kelemahan utama SJF jika diterapkan pada sistem interaktif adalah risiko terjadinya starvation (kelaparan proses). Hal ini terjadi karena SJF selalu memprioritaskan proses dengan waktu eksekusi terpendek, sehingga proses yang membutuhkan waktu lebih lama bisa terus-menerus didelay atau ditunda jika selalu ada proses singkat baru yang masuk
 
 ---
 
