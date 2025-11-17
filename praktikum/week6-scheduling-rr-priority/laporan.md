@@ -98,8 +98,8 @@ Tuliskan potongan kode atau perintah utama:
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/week.6.1png)
-
+![Screenshot hasil](screenshots/week.6.1.png)
+![Screenshot hasil](screenshots/week.6.2.png)
 ---
 
 ## Analisis
