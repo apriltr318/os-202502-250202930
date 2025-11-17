@@ -89,10 +89,10 @@ Mahasiswa akan melakukan simulasi perhitungan manual untuk menghitung *waiting t
 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
-     ```
-     WT[i] = waktu mulai eksekusi - Arrival[i]
-     TAT[i] = WT[i] + Burst[i]
-     ```
+```
+WT[i] = waktu mulai eksekusi - Arrival[i]
+TAT[i] = WT[i] + Burst[i]
+ ```
 
 ---
 
