@@ -98,8 +98,14 @@ Tuliskan potongan kode atau perintah utama:
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/week.6.1.png)
-![Screenshot hasil](screenshots/week.6.2.png)
+![Screenshot hasil](screenshots/week6.1.png)
+![Screenshot hasil](screenshots/week6.2.png)
+
+| Algoritma | Avg Waiting Time | Avg Turnaround Time | Kelebihan | Kekurangan |
+|------------|------------------|----------------------|------------|-------------|
+| RR | 3 | 8,5 | Adil terhadap semua proses | Tidak efisien jika quantum tidak tepat |
+| Priority | 4,75 | 10,35 | Efisien untuk proses penting | Potensi *starvation* pada prioritas rendah |
+
 ---
 
 ## Analisis
