@@ -1,32 +1,54 @@
-# Tugas Praktikum Minggu 7  
-Topik: Sinkronisasi Proses dan Masalah Deadlock  
+# Laporan Praktikum Minggu 7
+Topik:  Sinkronisasi Proses dan Masalah Deadlock
 
 ---
 
-## A. Deskripsi Singkat
-Pada praktikum minggu ini, mahasiswa akan mempelajari **mekanisme sinkronisasi proses dan penanganan deadlock** dalam sistem operasi.  
-Tujuan utamanya adalah memahami bagaimana beberapa proses dapat berjalan secara bersamaan (concurrent) tanpa menyebabkan konflik data atau kebuntuan sumber daya (*deadlock*).
-
-Mahasiswa akan melakukan studi kasus berbasis **Dining Philosophers Problem**, yaitu permasalahan klasik sinkronisasi yang menggambarkan bagaimana proses harus berbagi sumber daya terbatas (chopstick, mutex, semaphore) tanpa menimbulkan deadlock.  
-
-Eksperimen ini dilakukan secara berkelompok, difokuskan pada:
-- Analisis kondisi terjadinya deadlock.
-- Implementasi solusi sinkronisasi menggunakan *semaphore* atau *monitor*.
-- Dokumentasi perbandingan versi deadlock dan versi fixed.
+## Nama Anggota :
+| Nama | NIM | Kelas |
+| :--- | :--- | :--- |
+| Ahmad Wildan Asrovi  | 250202927 | 1KRB |
+| April Triadi | 250202930 | 1KRB |
+| Safrudin | 250202966 | 1KRB |
+ 
 
 ---
 
-## B. Tujuan
-Setelah menyelesaikan tugas ini, mahasiswa mampu:
-1. Mengidentifikasi empat kondisi penyebab deadlock (*mutual exclusion, hold and wait, no preemption, circular wait*).  
-2. Menjelaskan mekanisme sinkronisasi menggunakan *semaphore* atau *monitor*.  
-3. Menganalisis dan memberikan solusi untuk kasus deadlock.  
-4. Berkolaborasi dalam tim untuk menyusun laporan analisis.  
-5. Menyajikan hasil studi kasus secara sistematis.  
+## Tujuan
+Tuliskan tujuan praktikum minggu ini.  
+- Mahasiswa mampu mengidentifikasi empat kondisi penyebab deadlock (mutual exclusion, hold and wait, no preemption, circular wait).
+- Mahasiswa mampu menjelaskan mekanisme sinkronisasi menggunakan semaphore atau monitor.
+- Mahasiswa mampu menganalisis dan memberikan solusi untuk kasus deadlock.
+- Mahasiswa mampu berkolaborasi dalam tim untuk menyusun laporan analisis.
+- Mahasiswa mampu menyajikan hasil studi kasus secara sistematis.
+
 
 ---
 
-## C. Langkah Pengerjaan
+## Dasar Teori
+1. Deadlock
+   Deadlock adalah suatu kondisi di mana terdapat dua proses saling tunggu sehingga tidak ada proses yang bisa berjalan. Ada 4 penyebab deadlock yaitu:
+   - Mutual Exclusion (Saling Pengecualian).
+   - Hold and Wait (Menahan dan Menunggu).
+   - No Preemption (Tanpa Preemptif).
+   - Circular Wait (Menunggu Melingkar).
+2. Semaphore
+   Semaphore adalah variabel integer sederhana yang digunakan untuk menyelesaikan masalah sinkronisasi proses. Hanya dapat diakses melalui dua operasi standar dan tidak dapat dibagi: Wait (P) dan Signal (V).
+   Tipe Semaphore :
+   - Counting Semaphore (Semaphore Penghitung): Nilai semaphora dapat berkisar dari nol hingga bilangan bulat positif tak terbatas. Biasanya digunakan untuk mengontrol akses ke kumpulan sumber daya, di mana nilai awalnya adalah jumlah sumber daya yang tersedia.
+   Wait (P): Mengurangi nilai semaphora. Jika nilainya menjadi negatif, proses harus menunggu.
+   Signal (V): Meningkatkan nilai semaphora. Jika ada proses yang menunggu, salah satunya akan dibangunkan.
+   - Binary Semaphore (Mutex): Nilainya hanya bisa 0 atau 1. Ini sangat mirip dengan mutex lock (saling pengecualian) dan biasanya digunakan untuk mengimplementasikan lock pada bagian kode kritis (critical section).
+3. Monitor
+   Monitor adalah konstruksi pemrograman tingkat tinggi yang menyediakan mekanisme yang lebih terstruktur dan mudah digunakan untuk sinkronisasi.
+   Fitur Kunci Monitor
+   - Saling Pengecualian Otomatis (Automatic Mutual Exclusion): Monitor mengelompokkan variabel data bersama, prosedur, dan kode inisialisasi. Hanya satu proses (thread) pada satu waktu yang diizinkan untuk aktif di dalam prosedur monitor mana pun.
+   - Variabel Kondisi (Condition Variables): Ini adalah fitur yang disediakan di dalam monitor yang memungkinkan proses menunggu suatu kondisi tertentu terpenuhi. Operasi pada variabel kondisi adalah:
+   Wait: Proses melepaskan lock pada monitor dan menangguhkan dirinya hingga proses lain memanggil signal.
+   Signal: Membangunkan tepat satu proses yang menunggu pada variabel kondisi tersebut. Jika tidak ada yang menunggu, operasi tidak berpengaruh.
+
+---
+## Langkah Praktikum
+
 1. **Persiapan Tim**
    - Bentuk kelompok beranggotakan 3–4 orang.  
    - Tentukan ketua dan pembagian tugas (analisis, implementasi, dokumentasi).
@@ -80,32 +102,93 @@ Setelah menyelesaikan tugas ini, mahasiswa mampu:
 
 ---
 
-## D. Tugas & Quiz
-### Tugas
-1. Analisis versi *Dining Philosophers* yang menyebabkan deadlock dan versi fixed yang bebas deadlock.  
-2. Dokumentasikan hasil diskusi kelompok ke dalam `laporan.md`.  
-3. Sertakan diagram atau screenshot hasil simulasi/pseudocode.  
-4. Laporkan temuan penyebab deadlock dan solusi pencegahannya.  
 
-### Quiz
-Tuliskan jawaban di bagian **Quiz** laporan:
+## Kode / Perintah
+Tuliskan potongan kode atau perintah utama:
+```text
+     while true:
+       think()
+       pick_left_fork()
+       pick_right_fork()
+       eat()
+       put_left_fork()
+       put_right_fork()
+```
+
+---
+
+## Hasil Eksekusi
+Sertakan screenshot hasil percobaan atau diagram:
+1. Simulasi Dining Philosophers
+![Screenshot hasil](/praktikum/week7-concurrency-deadlock/screenshots/Week.7.1.png)
+2. Versi Fixed
+![Screenshot hasil](/praktikum/week7-concurrency-deadlock/screenshots/Week.7.2.png)
+
+---
+
+## Analisis
+1. Simulasi Dining Philosophers
+![Screenshot hasil](/praktikum/week7-concurrency-deadlock/screenshots/code.png)
+Deadlock terjadi ketika filsuf mencoba mengambil garpu sebelah kanan. Karena, semua filsuf sudah meng-lock garpu di sebelah kirinya masing-masing sehingga tidak ada garpu yang tersisa untuk digunakan sebagai garpu kanan.
+2. Versi Fixed
+![Screenshot hasil](/praktikum/week7-concurrency-deadlock/screenshots/code0.png)
+Deadlock telah dihindari dengan cara hanya mengizinkan 4 filsuf yang dapat makan secara bersamaan.
+Bukti:
+- Hanya filsuf 0 sampai 3 yang dapat masuk ke ruangan untuk makan bersama, sedangkan filsuf 4 harus menunggu.
+- Garpu F4 dalam kondisi tidak terpakai.
+- Filsuf 3 dapat memulai proses (makan) karena sudah menggunakan garpu kiri (F3) dan bisa menggunakan garpu kanan (F4). 
+- Filsuf 3 menyelesaikan proses, menaruh kembali ke dua garpu (F3 dan F4) lalu keluar ruangan dan Filsuf 4 bisa masuk ruangan.
+- Filsuf 2 dapat memulai proses (makan) karena sudah menggunakan garpu kiri (F2) dan bisa menggunakan garpu kanan (F3).
+- Filsuf 2 menyelesaikan proses dan menaruh kembali ke dua garpu (F2 dan F3).
+- Filsuf 1 dapat memulai proses (makan) karena sudah menggunakan garpu kiri (F1) dan bisa menggunakan garpu kanan (F2).
+- Filsuf 1 menyelesaikan proses dan menaruh kembali ke dua garpu (F1 dan F2).
+- Filsuf 0 dapat memulai proses (makan) karena sudah menggunakan garpu kiri (F0) dan bisa menggunakan garpu kanan (F1).
+- Filsuf 0 menyelesaikan proses dan menaruh kembali ke dua garpu (F0 dan F1).
+- Filsuf 4 dapat memulai proses (makan) karena sudah menggunakan garpu kiri (F4) dan bisa menggunakan garpu kanan (F0).
+- Filsuf 4 menyelesaikan proses dan menaruh kembali ke dua garpu (F4 dan F0).
+- Semua filsuf sudah berhasil menyelesaikan proses (makan).
+3. Analisis Deadlock
+     | Kondisi Deadlock | Terjadi di Versi Deadlock | Solusi di Versi Fixed |
+     |------------------|---------------------------|------------------------|
+     | Mutual Exclusion | Ya (satu garpu hanya bisa digunakan satu filsuf) | Tetap dipertahankan karena garpu adalah sumber daya yang tidak dapat dibagi |
+     | Hold and Wait | Ya (semua filsuf saling tunggu tanpa akhir) | Pengurangan jumlah filsuf yang dapat makan bersama, sehingga hold and wait dapat berakhir dan proses dapat berjalan |
+     | No Preemption | Ya (ketika garpu sedang digunakan, maka filsuf lain tidak dapat mengambilnya secara paksa) | Tetap digunakan. Tidak ada mekanisme pelepasan paksa |
+     | Circular Wait | Ya (semua filsuf menunggu garpu kanan yang menyebabkan rantai melingkar) | Pengurangan jumlah filsuf yang dapat makan bersama, sehingga memutus rantai melingkar |
+---
+
+## Diskusi
+1. Berdasarkan hasil eksperimen, Dining Philosophers mengalami Deadlock yang disebabkan:
+   - Mutual Exclusion: Garpu adalah sumber daya yang tidak dapat dibagi.
+   - Hold and Wait: Setiap filsuf dapat mengambil garpu kirinya dan menahan sambil menunggu garpu kanannya tersedia.
+   - No Preemption: Garpu tidak dapat diambil paksa dari tangan filsuf yang memegangnya.
+   - Circular Wait: Jika semua filsuf secara bersamaan mengambil garpu kirinya, mereka semua akan menunggu garpu kanan yang dipegang oleh tetangga sebelah mereka. Ini menciptakan rantai menunggu melingkar, dan tidak ada yang bisa makan.
+2. Penggunaan Counting Semaphore (room dengan nilai $N-1 = 4$) berhasil mencegah terjadinya deadlock. Semaphore ini membatasi jumlah filsuf yang diizinkan untuk masuk ke critical section secara bersamaan, sehingga melanggar kondisi Circular Wait. Ini menjamin bahwa selalu ada setidaknya satu filsuf yang dapat memperoleh kedua garpu dan melanjutkan proses makan.
+3. Mekanisme sinkronisasi ganda yaitu Mutex (forks) menjamin eksklusivitas akses ke satu sumber daya (garpu) dan Counting Semaphore (room) untuk mengelola sumber daya bersama secara efisien, aman, dan tanpa menghasilkan kebuntuan.
+---
+
+## Quiz
 1. Sebutkan empat kondisi utama penyebab deadlock.  
-2. Mengapa sinkronisasi diperlukan dalam sistem operasi?  
-3. Jelaskan perbedaan antara *semaphore* dan *monitor*.  
+   **Jawaban:**
+   - **Mutual Exclusion (Saling Pengecualian).**
+   - **Hold and Wait (Menahan dan Menunggu).**
+   - **No Preemption (Tanpa Preemptif).**
+   - **Circular Wait (Menunggu Melingkar).**  
+2. Mengapa sinkronisasi diperlukan dalam sistem operasi? 
+   **Jawaban:Sinkronisasi diperlukan dalam sistem operasi untuk mengelola akses bersama ke sumber daya atau data oleh proses atau thread yang berjalan secara bersamaan dan untuk menghindari deadlock.**  
+3. Jelaskan perbedaan antara semaphore dan monitor.  
+   **Jawaban:Semaphore adalah sinkronisasi tingkat rendah yang harus diimplementasikan secara eksplisit oleh programmer dengan menempatkan operasi P (wait) dan V (signal) di tempat yang tepat.** 
+   **Sedangkan Monitor adalah sinkronisasi tingkat tinggi yang bisa melakukan mutual exclusion secara otomatis, sistem menjamin hanya satu proses yang dapat aktif di dalam monitor pada satu waktu.** 
 
 ---
 
-## E. Output yang Diharapkan
-- Laporan analisis kelompok dalam `laporan.md`.  
-- Screenshot hasil simulasi atau pseudocode disimpan di `screenshots/`.  
-- Tabel analisis kondisi deadlock dan solusinya.  
-- Semua hasil telah di-*commit* ke GitHub tepat waktu.  
+## Refleksi Diri
+Tuliskan secara singkat:
+- Apa bagian yang paling menantang minggu ini? 
+   Mengerjakan tugas secara berkelompok.
+- Bagaimana cara Anda mengatasinya?  
+   Bertanya ke teman.
 
 ---
 
-## F. Referensi
-1. Abraham Silberschatz, Peter Baer Galvin, Greg Gagne. *Operating System Concepts*, 10th Edition, Wiley, 2018.  
-2. Andrew S. Tanenbaum, Herbert Bos. *Modern Operating Systems*, 4th Edition, Pearson, 2015.  
-3. OSTEP – *Operating Systems: Three Easy Pieces*, 2018.  
-4. Edsger Dijkstra. *Cooperating Sequential Processes* (1968).  
-5. Linux Manual Pages – *Semaphores, Mutexes, and Threads*.  
+**Credit:**  
+_Template laporan praktikum Sistem Operasi (SO-202501) – Universitas Putra Bangsa_
