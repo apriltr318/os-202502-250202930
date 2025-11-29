@@ -129,10 +129,10 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ## Analisis
 1. Simulasi Dining Philosophers
-![Screenshot hasil](/praktikum/week7-concurrency-deadlock/screenshots/code.png)
+![Screenshot hasil](/praktikum/week7-concurrency-deadlock/screenshots/Week.7.1.png)
 Deadlock terjadi ketika filsuf mencoba mengambil garpu sebelah kanan. Karena, semua filsuf sudah meng-lock garpu di sebelah kirinya masing-masing sehingga tidak ada garpu yang tersisa untuk digunakan sebagai garpu kanan.
 2. Versi Fixed
-![Screenshot hasil](/praktikum/week7-concurrency-deadlock/screenshots/code0.png)
+![Screenshot hasil](/praktikum/week7-concurrency-deadlock/screenshots/Week.7.2png)
 Deadlock telah dihindari dengan cara hanya mengizinkan 4 filsuf yang dapat makan secara bersamaan.
 Bukti:
 - Hanya filsuf 0 sampai 3 yang dapat masuk ke ruangan untuk makan bersama, sedangkan filsuf 4 harus menunggu.
