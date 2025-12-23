@@ -7,7 +7,7 @@ Topik: Simulasi Algoritma Penjadwalan CPU
 - **Nama**  : April Triadi
 - **NIM**   : 250202930
 - **Kelas** : 1IKRB
-- 
+ 
 ---
 
 ## A. Deskripsi Singkat
@@ -66,24 +66,49 @@ praktikum/week9-sim-scheduling/
    - Menampilkan hasil dalam tabel.
 
 3. **Eksekusi & Validasi**
-
-   - Jalankan program menggunakan dataset uji.  
-   - Pastikan hasil sesuai dengan perhitungan manual minggu sebelumnya.  
-   - Simpan hasil eksekusi (screenshot).
-
-4. **Analisis**
-
-   - Jelaskan alur program.  
-   - Bandingkan hasil simulasi dengan perhitungan manual.  
-   - Jelaskan kelebihan dan keterbatasan simulasi.
-
-5. **Commit & Push**
-
-   ```bash
-   git add .
-   git commit -m "Minggu 9 - Simulasi Scheduling CPU"
-   git push origin main
+   #### Kode Python Simulasi Algoritma Penjadwalan CPU First-Come, First-Served (FCFS)
+   ```python
+   def hitung_penjadwalan(proses_list, tipe="FCFS"):
+    # Urutkan berdasarkan Arrival Time dulu
+    proses_list.sort(key=lambda x: x['at'])
+    
+    current_time = 0
+    hasil = []
+    antrian = list(proses_list)
+    
+    if tipe == "SJF":
+        # Logika SJF Non-Preemptive
+        while antrian:
+            # Cari proses yang sudah tiba dan punya burst time terkecil
+            tersedia = [p for p in antrian if p['at'] <= current_time]
+            if not tersedia:
+                current_time = antrian[0]['at']
+                continue
+            
+            p = min(tersedia, key=lambda x: x['bt'])
+            antrian.remove(p)
+            
+            p['ct'] = current_time + p['bt']
+            p['tat'] = p['ct'] - p['at']
+            p['wt'] = p['tat'] - p['bt']
+            current_time = p['ct']
+            hasil.append(p)
+    else:
+        # Logika FCFS
+        for p in antrian:
+            if current_time < p['at']:
+                current_time = p['at']
+            p['ct'] = current_time + p['bt']
+            p['tat'] = p['ct'] - p['at']
+            p['wt'] = p['tat'] - p['bt']
+            current_time = p['ct']
+            hasil.append(p)
+            
+    return hasil
    ```
+   ### Hasil Eksekusi
+
+![Screenshot hasil](screenshots/Week.9.png)
 
 ---
 
@@ -93,6 +118,7 @@ praktikum/week9-sim-scheduling/
 2. Jalankan program dengan dataset uji.  
 3. Sajikan output dalam tabel atau grafik.  
 4. Tulis laporan praktikum pada `laporan.md`.
+---
 
 ### Quiz
 1. Mengapa simulasi diperlukan untuk menguji algoritma scheduling?
