@@ -109,6 +109,8 @@ praktikum/week9-sim-scheduling/
    ### Hasil Eksekusi
 
 ![Screenshot hasil](screenshots/Week.9.png)
+   ### Output
+![Screenshot hasil](screenshots/Week.9.1.png)
 
 ---
 
