@@ -68,11 +68,51 @@ praktikum/week10-page-replacement/
    - Hitung total *page fault*.
 
 4. **Eksekusi & Validasi**
+   ## Code
 
-   ### Hasil Eksekusi
+```python
+pages = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2]
+capacity = 3
+
+def simulasi(algoritma):
+    memory = []
+    faults = 0
+    print(f"\n--- Simulasi {algoritma.upper()} ---")
+    print("Page | Memory State      | Status")
+    print("-" * 32)
+    
+    for page in pages:
+        status = "Hit"
+        if page not in memory:
+            status = "Fault"
+            faults += 1
+            if len(memory) >= capacity:
+                memory.pop(0)
+            memory.append(page)
+        elif algoritma == "lru":
+            # Logika LRU: Pindahkan yang baru diakses ke belakang
+            memory.remove(page)
+            memory.append(page)
+            
+        print(f" {page}   | {str(memory):<15} | {status}")
+    
+    print("-" * 32)
+    print(f"Total Page Fault: {faults}")
+
+# Menjalankan simulasi
+simulasi("fifo")
+simulasi("lru")
+
+
+```
+
+---
+   ## Hasil Eksekusi
 ![Screenshot hasil](screenshots/Week.10.Code.png)
-   ### Output
+   ## Output
 ![Screenshot hasil](screenshots/Week.10.Output.png).
+
+---
 
 5. **Analisis Perbandingan**
 
@@ -92,7 +132,7 @@ FIFO hanya peduli pada urutan waktu masuknya halaman tanpa melihat apakah halama
 Dalam skenario ini, LRU lebih efisien karena menghasilkan jumlah page fault yang lebih sedikit (9) dibandingkan FIFO (10). LRU cenderung bekerja lebih baik pada beban kerja nyata karena mengikuti prinsip lokalitas referensi.
 
 6. **Commit & Push**
-
+```
    ```bash
    git add .
    git commit -m "Minggu 10 - Page Replacement FIFO & LRU"
