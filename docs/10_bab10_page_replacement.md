@@ -61,12 +61,12 @@ praktikum/week10-page-replacement/
    - Hitung total *page fault*.
 
 4. **Eksekusi & Validasi**
-
-   - Jalankan program untuk FIFO dan LRU.
-   - Pastikan hasil simulasi logis dan konsisten.
-   - Simpan screenshot hasil eksekusi.
-
-5. **Analisis Perbandingan**
+   ###Code
+   ![Screenshot hasil](screenshots/Week.10.Code.png)
+   ###Ouput
+   ![Screenshot hasil](screenshots/Week.10.Output.png)
+   
+6. **Analisis Perbandingan**
 
    Buat tabel perbandingan seperti berikut:
 
@@ -79,7 +79,7 @@ praktikum/week10-page-replacement/
    - Jelaskan mengapa jumlah *page fault* bisa berbeda.
    - Analisis algoritma mana yang lebih efisien dan alasannya.
 
-6. **Commit & Push**
+7. **Commit & Push**
 
    ```bash
    git add .
