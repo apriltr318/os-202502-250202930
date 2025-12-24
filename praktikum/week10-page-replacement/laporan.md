@@ -69,9 +69,10 @@ praktikum/week10-page-replacement/
 
 4. **Eksekusi & Validasi**
 
-   - Jalankan program untuk FIFO dan LRU.
-   - Pastikan hasil simulasi logis dan konsisten.
-   - Simpan screenshot hasil eksekusi.
+   ### Hasil Eksekusi
+![Screenshot hasil](screenshots/Week.10.Code.png)
+   ### Output
+![Screenshot hasil](screenshots/Week.10.Output.png).
 
 5. **Analisis Perbandingan**
 
