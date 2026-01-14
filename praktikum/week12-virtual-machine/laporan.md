@@ -4,9 +4,12 @@ Topik: Virtualisasi Menggunakan Virtual Machine
 ---
 
 ## Identitas
-- **Nama**  : April Triadi
-- **NIM**   : 250202930
-- **Kelas** : 1IKRB
+| Nama | NIM | Kelas |
+| :--- | :--- | :--- |
+| APRIL TRIADI | 250202930 | 1IRB |
+| LUTHFI AULIA RAHMAN | 250202948 | 1IKRB |
+| MUHAMMAD FATIKH MAHSUN | 250202952 | 1IKRB |
+
 
 ---
 
@@ -91,6 +94,8 @@ praktikum/week12-virtual-machine/
 ![Konfigurasi](screenshot/konfigurasi_resource.png)
 3.Guesst Running
 ![os_guest_running](screenshot/os_guest_running.png)
+<img width="1920" height="1080" alt="Screenshot 2026-01-10 184134" src="https://github.com/user-attachments/assets/3b46b1db-3db3-4440-bb13-f6a8a7e8a5bc" />
+
 
 ---
 
