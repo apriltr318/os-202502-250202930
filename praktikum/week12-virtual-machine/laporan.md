@@ -88,14 +88,10 @@ praktikum/week12-virtual-machine/
 --- 
 
 ## Hasil Eksekusi
-1. Instalasi VirtualBox
-![instruksi](screenshot/instalasi_vm.png)
-2.Konfigurasi Virtual Machine
-![Konfigurasi](screenshot/konfigurasi_resource.png)
-3.Guesst Running
-![os_guest_running](screenshot/os_guest_running.png)
-<img width="1920" height="1080" alt="Screenshot 2026-01-10 184134" src="https://github.com/user-attachments/assets/3b46b1db-3db3-4440-bb13-f6a8a7e8a5bc" />
-
+1. ![1](screenshot/1.png)
+2. ![2](screenshot/2.png)
+3. ![2](screenshot/3.png)
+4. ![2](screenshot/4.png)
 
 ---
 
