@@ -113,10 +113,6 @@ praktikum/week13-docker-resource-limit/
 ![xxxx](screenshot/week13.2.png)
 3.xxxx
 ![xxxx](screenshot/week13.3.png)
-4.xxxx
-![xxxx](screenshot/week13.4.png)
-5.xxxc
-![xxxx](screenshot/week13.5.png)
 
 ---
 
