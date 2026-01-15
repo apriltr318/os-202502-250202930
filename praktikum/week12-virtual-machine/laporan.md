@@ -88,10 +88,13 @@ praktikum/week12-virtual-machine/
 --- 
 
 ## Hasil Eksekusi
-1. ![1](screenshot/1.png)
-2. ![2](screenshot/2.png)
-3. ![2](screenshot/3.png)
-4. ![2](screenshot/4.png)
+ ![1](screenshots/1.png)
+   
+ ![2](screenshots/2.png)
+   
+ ![2](screenshots/3.png)
+   
+ ![2](screenshots/4.png)
 
 ---
 
