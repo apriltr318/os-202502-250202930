@@ -6,7 +6,7 @@ Topik: Virtualisasi Menggunakan Virtual Machine
 ## Identitas
 | Nama | NIM | Kelas |
 | :--- | :--- | :--- |
-| APRIL TRIADI | 250202930 | 1IRB |
+| APRIL TRIADI | 250202930 | 1IKRB |
 | LUTHFI AULIA RAHMAN | 250202948 | 1IKRB |
 | MUHAMMAD FATIKH MAHSUN | 250202952 | 1IKRB |
 
