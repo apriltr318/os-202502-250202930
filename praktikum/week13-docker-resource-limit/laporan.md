@@ -107,12 +107,12 @@ praktikum/week13-docker-resource-limit/
 ---
    
 ## Hasil Eksekusi
-1. xxxx
-![xxxx](screenshot/week13.1.png)
-2.xxxx
-![xxxx](screenshot/week13.2.png)
-3.xxxx
-![xxxx](screenshot/week13.3.png)
+1. docker build
+![xxxx](screenshots/week13.1.png)
+2. limit
+![xxxx](screenshots/Week13.2.png)
+3. no limit
+![xxxx](screenshots/week13.3.png)
 
 ---
 
