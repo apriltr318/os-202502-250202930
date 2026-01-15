@@ -1,0 +1,4 @@
+Process,Alloc_R1,Alloc_R2,Req_R1,Req_R2
+P1,1,0,0,1
+P2,0,1,1,0
+P3,0,1,1,1
