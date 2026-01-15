@@ -1,0 +1,49 @@
+Nama Mesin Virtual: VM_OS_Praktikum_Week12
+Host OS         : Windows 10 Pro
+Tools Virtualisasi: Oracle VM VirtualBox
+
+1. Konfigurasi Sistem
+   - Guest OS: Ubuntu 22.04 LTS (64-bit)
+   - Base Memory (RAM): 2048 MB
+   - Virtual CPUs     : 2 cores
+   - Chipset          : PIIX3 (default)
+   - ACPI             : Enabled
+
+2. Penyimpanan (Virtual Disk)
+   - Hard Disk Type   : VDI (VirtualBox Disk Image)
+   - Storage on Host  : Dynamic Allocation
+   - Disk Size        : 30 GB
+
+3. Boot & Firmware
+   - Enable EFI       : Tidak dicentang (default BIOS)
+   - Boot Order       : Optical → Hard Disk
+
+4. Jaringan
+   - Adapter 1        : NAT
+   - Adapter 2        : Host-only Adapter
+
+5. Fitur Tambahan / Virtual Hardware
+   - Paravirtualization Interface: Default
+   - Enable Nested Paging       : Yes
+   - Enable VT-x/AMD-V         : Yes (jika host mendukung)
+   - USB Controller           : USB 3.0 (xHCI)
+   - Shared Clipboard         : Bidirectional
+   - Shared Folders           : Folder_MyVM (Host) → /mnt/shared (Guest)
+
+6. Catatan Instalasi Guest OS
+   - ISO Image: ubuntu-22.04-desktop.iso
+   - Username : praktikan
+   - Password : --------
+   - Partisi Disk: Default
+   - Instalasi Guest Additions selesai setelah boot
+
+7. Pengujian
+   - Cek alokasi RAM & CPUs: `htop` atau System Monitor
+   - Cek jaringan:
+       * NAT: koneksi internet
+       * Host-only: ping host dari guest
+   - Cek shared folder: `ls /mnt/shared`
+
+Catatan Umum
+- RAM dan CPU harus sesuai kapasitas host agar tidak membuat host menjadi lambat.1
+- Virtual hard disk harus cukup besar untuk instalasi OS dan software praktikum.2
