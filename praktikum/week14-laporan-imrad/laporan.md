@@ -1,5 +1,14 @@
 # Tugas Praktikum Minggu 14  
+
 Topik: Penyusunan Laporan Praktikum Format IMRAD
+
+---
+
+## Indentitas
+
+- **Nama**  : April Triadi
+- **NIM**   : 250202930
+- **Kelas** : 1IKRB
 
 ---
 
@@ -136,7 +145,9 @@ plt.show()
 
 ## 3.1 Hasil Simulasi
 
-![hasil simulasi](week14.1.png)
+<p align="center">
+  <img src="screenshots/week14.1.png" alt="week14" width="500">
+</p>
 
 ### 3.2 Tabel Hasil Simulasi
 
