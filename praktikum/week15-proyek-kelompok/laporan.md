@@ -64,7 +64,7 @@ Algoritma ini memproses pelanggan berdasarkan urutan kedatangan di `dataset.csv`
 | P4 | 3 | 6 | 16 | 22 | 13 | 19 | Alat Tulis |
 | P5 | 4 | 2 | 22 | 24 | 18 | 20 | Beli Minuman |
 
-![Screenshot hasil](./screenshots/hasil_tabel_cpu_schedulling.png)
+![Screenshot hasil](./screenshots/hasil_tabel_cpu_scheduling.png)
 
 Dapat dilihat adanya kenaikan *Waiting Time* yang signifikan pada P4 dan P5 karena harus menunggu P3 yang memiliki waktu layanan lama (8 unit). Inilah yang disebut dengan *Convoy Effect*.
 
@@ -84,9 +84,9 @@ Berdasarkan logika di `main.py`, sistem akan melakukan "Tutup Paksa" pada aplika
 | No | Nama Anggota | NIM | Peran / Tugas |
 |:---:|:---|:---:|:---|
 | 1 | **April Triadi** | 250202930 | Project Lead & Dockerization |
-| 2 | **Muhammad Fatikh Mahsun** | 250303952 | Developer 1 (Logic FCFS & Dataset) |
+| 2 | **Mohammad Fatikh Mahsun** | 250202952 | Developer 1 (Logic FCFS & Dataset) |
 | 3 | **Luthfi Aulia Rahman** | 250202948 | Developer 2 (Logic FIFO & UI) |
-| 4 | **Syafiiyah Ramadhani** | 250202968 | Dokumentasi & Quality Assurance |
+| 4 | **Syafi`iyah Ramadhani** | 250202968 | Dokumentasi & Quality Assurance |
 
 ---
 
