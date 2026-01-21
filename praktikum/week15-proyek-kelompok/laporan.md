@@ -68,7 +68,7 @@ Algoritma ini memproses pelanggan berdasarkan urutan kedatangan di `dataset.csv`
 
 Dapat dilihat adanya kenaikan *Waiting Time* yang signifikan pada P4 dan P5 karena harus menunggu P3 yang memiliki waktu layanan lama (8 unit). Inilah yang disebut dengan *Convoy Effect*.
 
-### B. Analisis Simulasi FIFO Page Replacement (RAM HP)
+### B. Analisis Simulasi FIFO Page Replacement (laptop)
 FIFO bekerja secara murni berdasarkan waktu masuk tanpa mempertimbangkan frekuensi penggunaan aplikasi. Hal ini sering menyebabkan aplikasi yang masih dibutuhkan terhapus dari memori jika aplikasi tersebut adalah yang paling lama berada di RAM, mengakibatkan jumlah *page fault* yang tinggi pada sistem dengan RAM terbatas.
 Berdasarkan logika di `main.py`, sistem akan melakukan "Tutup Paksa" pada aplikasi tertua jika RAM penuh.
 
