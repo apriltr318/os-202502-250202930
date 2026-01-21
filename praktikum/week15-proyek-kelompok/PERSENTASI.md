@@ -52,7 +52,7 @@
 ## 4. HASIL & ANALISIS: CPU SCHEDULING (FCFS)
 
 **Tabel Output Simulasi:**
-| ID | Datang | Layanan | Mulai | Selesai | WT | TAT |
+| ID | Arrival time | Burst time | Start time | Finish time | WT | TAT |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
 | P1 | 0 | 5 | 0 | 5 | 0 | 5 |
 | P2 | 1 | 3 | 5 | 8 | 4 | 7 |
@@ -105,4 +105,5 @@ Berdasarkan riwayat repositori (*Git logs*), berikut adalah pembagian tugas kelo
 
 ---
 **Terima Kasih**
+
 *Laporan ini disusun sebagai tanggung jawab akademik mata kuliah Sistem Operasi.*
