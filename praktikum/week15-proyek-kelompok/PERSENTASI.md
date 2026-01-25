@@ -22,7 +22,7 @@
     * Merepresentasikan pelanggan yang datang lebih awal akan dilayani terlebih dahulu.
     * Digunakan untuk memahami cara kerja algoritma *First Come First Serve* dalam penjadwalan proses.
 2.  **Simulasi RAM HP (FIFO)**: 
-    * Memodelkan RAM ponsel yang menutup aplikasi tertua saat kapasitas penuh untuk memberi ruang bagi aplikasi baru.
+    * Memodelkan RAM yang menutup aplikasi tertua saat kapasitas penuh untuk memberi ruang bagi aplikasi baru.
     * Digunakan untuk memahami mekanisme *page replacement* FIFO pada manajemen memori.
 
 ---
@@ -107,3 +107,4 @@ Berdasarkan riwayat repositori (*Git logs*), berikut adalah pembagian tugas kelo
 **Terima Kasih**
 
 *Laporan ini disusun sebagai tanggung jawab akademik mata kuliah Sistem Operasi.*
+
